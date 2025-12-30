@@ -1,8 +1,7 @@
 const axios = require('axios');
 
-const serverURL = 'http://localhost:5000/api/data'; // or your deployed backend
+const serverURL = 'http://localhost:5000/api/data'; 
 
-// Function to generate random sensor data
 function generateFakeData() {
   return {
     temperature: 25 + Math.random() * 5,
@@ -19,7 +18,6 @@ function generateFakeData() {
   };
 }
 
-// Send 50 requests
 (async () => {
   for (let i = 0; i < 50; i++) {
     const data = generateFakeData();
